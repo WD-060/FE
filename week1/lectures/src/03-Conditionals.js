@@ -1,12 +1,25 @@
-
-
-// block scope
 //Conditionals
-// falsy -> false, 0, '', null, undefined, NaN
+// They are blocks of code that allow us to execute different code based on different conditions.
+// We can use the following operators to compare values:
+// > greater than
+// < less than
+// >= greater than or equal to
+// <= less than or equal to
+// === equal value and equal type
+// !== not equal value or not equal type
+// == equal value
+// != not equal value
+
+// We can use the following operators to concatenate conditions:
 // && -> and
 // || -> or
+
+// We can use the following operator to negate a condition:
 // ! -> not
-// if/else conditional
+
+//There are two main types of conditionals:
+// if / else conditional
+// 
 if (age) {
   console.log("Age is truthy");
 }
@@ -26,7 +39,7 @@ if (age < 17 && age === 17) {
   console.log("You are a minor");
 }
 
-// switch
+// Switch conditionals
 
 const day = "Monday";
 let message;
@@ -52,9 +65,3 @@ switch (day) {
 }
 
 console.log(message);
-
-// loops
-// for loop
-for (let i = 0; i <= 10; i++) {
-  console.log(i);
-}
