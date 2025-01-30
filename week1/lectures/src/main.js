@@ -1,30 +1,4 @@
-console.log("Hello, world!");
 
-// Data types
-// Primitive data types
-//String
-("I am Maria");
-("I'm Maria");
-// Numbers
-9;
-//Boolean
-true;
-false;
-// Bigint
-9007199254740991n;
-//Undefined
-//Null
-// Symbol
-
-// Declaring a variable
-const firstName = "Maria";
-console.log(firstName);
-let age;
-console.log(age);
-
-console.log(age);
-var lastName = "";
-// let age = 40;
 
 // block scope
 //Conditionals
