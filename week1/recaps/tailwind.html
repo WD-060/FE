@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body
+    class="grid grid-rows-[auto_1fr_auto] min-h-screen place-items-center bg-gray-100"
+  >
+    <header class="bg-blue-500 text-white text-center px-4 py-2 w-full">
+      <nav class="flex justify-between items-center">
+        <div class="w-10">
+          <img
+            class="w-100 rounded-full"
+            src="https://img.freepik.com/vektoren-kostenlos/vogel-bunter-logo-gradientenvektor_343694-1365.jpg?w=740&t=st=1738252963~exp=1738253563~hmac=33c5fd4ba61fb4611d481530f07dcabdf4d6948d0b6b7c0c0f3bf9c2335be095"
+            alt="logo"
+          />
+        </div>
+        <ul class="flex space-x-4">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="text-2xl font-bold">Tailwind is fun!</h1>
+      <section class="grid grid-cols-1 gap-4">
+        <h2 class="text-lg font-medium">My first Tailwind CSS page</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <img src="./src/assets/download (2).jpg" alt="cat" />
+          <p>It's so easy to use Tailwind CSS!</p>
+        </div>
+      </section>
+      <section class="grid grid-cols-1 gap-4">
+        <h2 class="text-lg font-medium">My first Tailwind CSS page</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <img src="./src/assets/download.jpg" alt="cat" />
+          <p>It's so easy to use Tailwind CSS!</p>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-blue-500 text-white text-center px-4 py-2 w-full">
+      <p>&copy; 2021 My first Tailwind CSS page</p>
+    </footer>
+  </body>
+</html>
