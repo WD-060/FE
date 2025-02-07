@@ -27,6 +27,8 @@ This repository is going to hold all of the information for the front-end part o
     Module: Javascript Modules
     Group project: Movie Diary or Pokedex
 
+![Schedule](schedule-week-3.png)
+
 ## Week-04
 
     Start Date: 19/02/2025
