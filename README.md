@@ -36,6 +36,8 @@ This repository is going to hold all of the information for the front-end part o
     Module: Intro to React
     Group project: Refractor Movie Diary or Pokedex
 
+![schedule](schedule-week-4.png)
+
 ## Week-05
 
     Start Date: 26/02/2025
