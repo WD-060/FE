@@ -71,12 +71,11 @@ body.appendChild(header);
 body.appendChild(hero);
 body.appendChild(footer);
 
-
 // Applying styles
 
 // Header styles
 header.style.backgroundColor = "#fff";
-header.style.boxShadow = " 0 2px 4px rgba(0, 0, 0, 0.1)"
+header.style.boxShadow = " 0 2px 4px rgba(0, 0, 0, 0.1)";
 header.style.padding = "1rem 0";
 
 // Nav styles
@@ -93,15 +92,65 @@ logo.style.fontWeight = "bold";
 logo.style.color = "#333";
 logo.style.textDecoration = "none";
 
-// Nav list styles   
+// Nav list styles
 navList.style.display = "flex";
 navList.style.listStyle = "none";
 
 // Nav item styles
-document.querySelectorAll(".nav-item").forEach((item) => item.style.marginLeft = "1.5rem")
+document
+  .querySelectorAll(".nav-item")
+  .forEach((item) => (item.style.marginLeft = "1.5rem"));
 
 document.querySelectorAll(".nav-link").forEach((link) => {
-    link.style.textDecoration = "none";
-    link.style.color = "#333";
-    link.style.fontWeight = "bold";
-})
+  link.style.textDecoration = "none";
+  link.style.color = "#333";
+  link.style.fontWeight = "bold";
+});
+
+// Hero styles
+hero.style.height = "560px";
+hero.style.backgroundImage =
+  "url(https://images.pexels.com/photos/2907301/pexels-photo-2907301.jpeg?auto=compress&cs=tinysrgb&w=640&h=853&dpr=1)";
+hero.style.backgroundSize = "cover";
+hero.style.backgroundPosition = "center";
+hero.style.backgroundRepeat = "no-repeat";
+
+// Hero content styles
+heroContent.style.maxWidth = "600px";
+heroContent.style.height = "100%";
+heroContent.style.display = "flex";
+heroContent.style.flexDirection = "column";
+heroContent.style.justifyContent = "space-around";
+heroContent.style.alignItems = "center";
+heroContent.style.textAlign = "center";
+
+// Hero title styles
+heroTitle.style.fontSize = "2.5rem";
+heroTitle.style.marginBottom = "1rem";
+
+// Hero text styles
+heroText.style.fontSize = "1.2rem";
+heroText.style.marginBottom = "2rem";
+
+// btn styles
+btn.style.backgroundColor = "#333";
+btn.style.color = "#fff";
+btn.style.padding = "0.75rem 1.5rem";
+btn.style.textDecoration = "none";
+btn.style.borderRadius = "5px";
+btn.style.transition = "background-color 0.3s ease";
+
+// btn hover styles
+btn.addEventListener("mouseover", () => {
+  btn.style.backgroundColor = "#555";
+});
+btn.addEventListener("mouseout", () => {
+  btn.style.backgroundColor = "#333";
+});
+
+// Footer styles
+footer.style.backgroundColor = "#333";
+footer.style.color = "#fff";
+footer.style.textAlign = "center";
+footer.style.padding = "1rem 0";
+footer.style.marginTop = "auto";

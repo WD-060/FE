@@ -3,6 +3,28 @@ const list = document.querySelector("#item-list");
 const input = document.querySelector("#item-input");
 const listItems = JSON.parse(localStorage.getItem("list")) || [];
 
+fetch("https://jsonplaceholder.typicode.com/todos")
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data.slice(0, 10));
+    // data.slice(0, 10).map((item) => addItem(item));
+    localStorage.setItem("list", JSON.stringify(data.slice(0, 10)));
+  })
+  .catch((error) => console.log(error));
+
+const fetchTodos = async (url) => {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+};
+fetchTodos("https://jsonplaceholder.typicode.com/todos");
+//   async function fetchToDos(url) {};
+
 const EditBtnClass =
   "px-4 py-2 bg-green-500 hover:bg-green-400 text-white rounded";
 const DeleteBtnClass =
@@ -34,10 +56,6 @@ const addItem = (item) => {
     const newText = prompt("Enter new text");
     if (newText) {
       span.textContent = newText.trim();
-      //   const foundItem = listItems.find((item) => item.id === li.id);
-      //   foundItem.title = newText.trim();
-      //   const updatedList = listItems.filter((item) => item.id !== li.id);
-      //   updatedList.push(foundItem);
       const updatedList = listItems.map((item) => {
         if (item.id === li.id) {
           return {
@@ -76,28 +94,6 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-// Local Storage
-// const items = localStorage.getItem("list");
-// console.log(items);
-// localStorage.setItem("token", "Hello World");
-// localStorage.setItem("number", 3);
-// localStorage.setItem("boolean", true);
-// localStorage.setItem("array", [1, 2, 3]);
-// localStorage.setItem("object", JSON.stringify({ name: "John Doe" }));
-// localStorage.setItem(
-//   "list",
-//   JSON.stringify([
-//     { name: "John Doe" },
-//     { name: "Jane Doe" },
-//     { name: "Max Doe" },
-//   ])
-// );
-// const object = JSON.parse(localStorage.getItem("object"));
-// console.log(object);
-// const listStorage = JSON.parse(localStorage.getItem("list"));
-// console.log(listStorage);
 
-// const logOut = () => {
-//   localStorage.removeItem("token");
-//   localStorage.clear();
-// };
+
+console.log(typeof listItems);
