@@ -9,7 +9,7 @@ function Student(props) {
       <h2>Student</h2>
       <p>Name: {props.name}</p>
       <p>Age: {props.age}</p>
-      <Address city={props.city} state={props.state} />
+      {/* <Address city={props.city} state={props.state} /> */}
     </div>
   );
 }
