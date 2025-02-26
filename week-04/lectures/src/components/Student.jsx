@@ -3,7 +3,7 @@ import Address from "./Address";
 function Student(props) {
   //   const name = "John Doe";
   //   const age = 25;
-  console.log(props);
+  // console.log(props);
   return (
     <div>
       <h2>Student</h2>
