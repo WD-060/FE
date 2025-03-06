@@ -5,12 +5,16 @@ const AuthContext = createContext();
 const useAuth = () => useContext(AuthContext); // optional
 
 const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({
+    username: "",
+    email: "",
+    password: "",
+  });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("error");
   const [isAuth, setIsAuth] = useState(false);
   const [token, setToken] = useState(localStorage.getItem("token") || null);
-
+``
   const checkAuth = (token) => {
     if (token) {
       setIsAuth(true);

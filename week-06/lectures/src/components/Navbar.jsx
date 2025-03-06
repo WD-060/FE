@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import Logout from "./Logout";
 
 function Navbar() {
   return (
@@ -8,6 +9,7 @@ function Navbar() {
         <li className="btn btn-ghost text-xl"><NavLink to="/about" style={({isActive}) => isActive ? {color: "red"} : {color: "#646cff"}}>About</NavLink></li>
         <li className="btn btn-ghost text-xl"><NavLink to="/contact" style={({isActive}) => isActive ? {color: "red"} : {color: "#646cff"}}>Contact</NavLink></li>
         <li className="btn btn-ghost text-xl"><NavLink to="/students" style={({isActive}) => isActive ? {color: "red"} : {color: "#646cff"}}>Students</NavLink></li>
+        <li className="btn btn-ghost text-xl"><Logout /></li>
       </ul>
     </nav>
   );
